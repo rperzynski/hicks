@@ -22,7 +22,7 @@ body {
 background: #1F2121;
 text-align: center;
 font-family: 'Adamina', serif; 
-padding-top: 20px;
+padding-top: 0px;
 font-size: 16px; /* Set the base font size to 14px */
 line-height: 20px; /* Set line height for the page to 20px */
 
@@ -30,12 +30,17 @@ line-height: 20px; /* Set line height for the page to 20px */
 }
 
 a {
-	color: #6699CC;
+	color: #09549e;
 	text-decoration: none;
 	}
 
+	p {
+	padding-bottom: 20px;
+	}
+	
 	div#navig{
 	padding-bottom: 20px;
+	padding-top: 20px;
 	}
 
 div#navig li{
@@ -51,10 +56,16 @@ ul#navi li a{
 	background-color:  #6699CC;
 	padding-left: 5px;
   padding-right: 5px;
-	padding-top: 6px;
+	padding-top: 4px;
 	padding-bottom: 6px;
 	border-radius: 0em;
+	border-top: 2px solid white;
 }
+
+	ul#navi li + li  + li + li a {
+		background-color: red;
+		}
+
 
 ul#navi li a:hover {
   color: white;
@@ -69,7 +80,7 @@ text-align: center;
 
 ul#title li {
 	display: inline;
-
+	font-size: 36px;
 	}
 
 h1#head {  
@@ -80,7 +91,7 @@ color: white;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
-
+padding-bottom: 20px;
 }
 
 h2 {
@@ -109,7 +120,7 @@ color: black;
 
 div#bottom {
 text-align: center;
-background: #CCDBDB;
+background: white;
 height: 5000px;
 margin-left: auto;
 margin-right: auto;
@@ -125,12 +136,16 @@ padding-right: 10px;
 }
 
 img#largeimg {
-max-width: 99%;
+display: none;
 
 }	
 
 img {
 max-width: 99%;
+}
+
+ul#writing li {
+padding-bottom: 20px;
 }
 
 div#quickinfo {
@@ -164,28 +179,7 @@ div#subnav {
 	padding-bottom: 40px;
 }
 
-div#captionright {
-	
-	background: #E8D1D4;
-	width: 170px;
-	height: 178px;
-	float: right;
-	border: 1px solid #A2ABA5;
-	margin-left: 3px;
-	font-size: 12px;
-	max-width: 99%;
-	}
-	
-	div#captionleft {
-	background: #E8D1D4;
-	width: 170px;
-	height: 178px;
-	float: left;
-	border: 1px solid #A2ABA5;
-	max-width: 99%;
-	font-size: 12px;
-	
-	}
+
 	
 	
 ul#piccaps {
@@ -214,7 +208,7 @@ margin-right: auto;
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 978px) {
 
 
 
@@ -224,7 +218,7 @@ div#large li{
 	}
 	
 div#heading {
-width: 672px;
+width: 978px;
 margin-left: auto;
 margin-right: auto;
 position: relative;
@@ -236,7 +230,7 @@ display: block;
 
 h1#head {  
 position: absolute;
-top: 20px;
+top: 40px;
 font-family: 'Adamina', serif; 
 font-size: 48px;
 text-align: left;
@@ -262,8 +256,8 @@ max-width: 100%;
 div#bottom {
 text-align: center;
 
-width: 672px;
-height: 5000px;
+width: 978px;
+height: 1000px;
 margin-left: auto;
 margin-right: auto;
 position: float;
@@ -273,8 +267,14 @@ position: float;
 ul#title li {
 	display: block;
 	padding-bottom: 20px;
-	
+	font-size: 48px;
 	}
+	
+	div#navig {
+			padding-bottom: 0px;
+	padding-top: 0px;
+	}
+	
 	
 	div#navig li{
 
@@ -284,10 +284,18 @@ font-size: 16px;
 ul#navi li a {
 	padding-left: 5px;
   padding-right: 5px;
-	padding-top: 5px;
+	padding-top: 3px;
 	padding-bottom: 5px;
 	border-radius: 0em;
+	border-top: 2px solid white;
+	
 	}
+	
+	ul#navi li + li  + li + li a {
+		border-right: 2px solid white;
+		padding-right: 3px;
+		
+		}
 
 div#large {
 display: block;
@@ -295,8 +303,8 @@ position: ;
 }
  div#navig { 
 position: absolute;
-top: 10px;
-left: 58%;
+top: 50px;
+left: 713px;
 font-family: Georgia, serif; 
 border: 0px solid black;
 }
